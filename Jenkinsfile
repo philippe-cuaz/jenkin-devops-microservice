@@ -47,7 +47,7 @@ pipeline {
 			stage('Build Docker Image') {
 				steps {
 					//"docker build -t in28min/currency-exchange-devops:$env.BUILD_TAG"
-					script{
+					script {
 						dockerImage = docker.build("in28min/currency-exchange-devops:${env.BUILD_TAG}")
 					}
 				}
@@ -63,7 +63,7 @@ pipeline {
 					}
 
 				}
-		} 
+		    } 
 		   
 		post {
 			always{
@@ -76,4 +76,5 @@ pipeline {
 				echo 'Irn when you fail'
 			}
 		}
+}
 }
