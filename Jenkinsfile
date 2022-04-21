@@ -64,7 +64,7 @@ pipeline {
 
 				}
 		    } 
-		   
+		}
 		post {
 			always{
 			echo 'I am awesome, I run always'
@@ -76,5 +76,5 @@ pipeline {
 				echo 'Irn when you fail'
 			}
 		}
-}
+
 }
